@@ -9,6 +9,14 @@ credit to nprasan on GitHub for reference
 #define LED1DIR P1DIR
 #define LED1OUT P1OUT
 
+#define BUTTON BIT3		// definitions of BUTTON pins
+#define BTNREN P1REN
+#define BTNOUT P1OUT
+#define BTNIES P1IES
+#define BTNIE P1IE
+#define BTNIFG P1IFG
+
+//NEEDS BUTTON INPUT
 void delay(unsigned int t)		    //delay functions
 {
 	unsigned int d;
