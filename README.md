@@ -1,3 +1,5 @@
+### Extra work in Debounce
+
 # Lab 4: Timers and PWM
 In this lab, you will begin to use one of the most fundamental control techniques for a microcontroller. You can blink an LED, and you can blink it at a particular rate, but so far you have done symmetric waves. This means that you have you output be on and off for the same amount of time. What do you think will happen if you, say, keep the LED turned off for only 10% of the time instead of 50%? And what about those buttons, have you already had issues where your button accidentally triggers your code multiple times with interrupts enabled?
 

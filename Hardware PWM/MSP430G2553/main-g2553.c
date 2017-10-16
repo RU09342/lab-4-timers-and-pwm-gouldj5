@@ -1,43 +1,3 @@
-# LAB 4 - Hardware PWM
-#### Joshua Gould
-##### Created - 10-16-2017
-##### Updated - 10-16-2017
-
-## Library Used
-msp430.h - default library
-
-## Dependencies
-* MSP430 Development board
-* CCS coding software
-
-## Set Requirements
-"You need to replicate the same behavior as in the software PWM, only using the Timer Modules ability to directly output to a GPIO Pin instead of managing them in software. "
-
-#### Tasks
-* [x] Use PWM in Hardware Design
-* [x] PWM one of the on-board LEDs at a 50% duty cycle.
-* [x] The duty cycle of the LED should increase by 10%. 
-* [x] Once the cycle has reached 100%, the duty cycle should go back to 0% on the next button press.
-* [ ] Extra Work
-
-## Compatibility
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR6989
-* MSP430FR5594
-* MSP430G2553
-
-# Functionality Description
-Increment with PWM in hardware
-
-### Detailed Description
-
-* Initialize GPIO
-* Set clock (SMCLK in up mode)
-* Increment timer and synconize with LED
-
-### Example Code
-```C
 //   Darren Lu
 //   Texas Instruments Inc.
 //   July 2015
@@ -102,4 +62,4 @@ __interrupt void Port_1(void) {
 	//clears interrupt flag to exit interrupt
 	BTNIFG &= ~BUTTON;
 }
-```
+
